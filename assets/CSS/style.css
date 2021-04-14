@@ -205,9 +205,15 @@ footer {
     padding-top: 1em;
 }
 footer a {
-    text-decoration: none;
+    text-decoration: underline solid;
     color: #D4F0FC;
     font-family: Arial, Helvetica, sans-serif;
+}
+#contact {
+    margin: 2em 10%;
+    height: 600px;
+    width: 80%;
+    background-color: tomato;
 }
 /*      rupture 480 px       */
 @media screen and (max-width: 480px) {
