@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/04e719ed35.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/CSS/style.css">
     <title>Voyage & Co. - Accueil</title>
 </head>
@@ -23,10 +24,11 @@
         <!-- navbar -->
         <a class="button" href="home.html">Accueil</a>
         <a class="button" href="#">Destinations</a>
-        <a class="button" href="#">Réservations</a>
-        <a class="button" href="contact.html">Contact</a>
+        <a class="button reducedButton" href="#">Réservations</a>
+        <a class="button reducedButton" href="contact.html">Contact</a>
+        <i class="fas fa-search button" id="reducedSearch"></i>
+        <!-- search bar and button -->
         <form action="#" method="POST" id="searchForm">
-            <!-- search bar and button -->
             <input id="searchField" name="search" type="search" placeholder="Rechercher...">
             <button type="submit" id="searchButton">Go !</button>
         </form>
@@ -133,6 +135,13 @@
                     </p>
                 </div>
             </a>
+            <div id="allTravelsDiv">
+                <a id="allTravels" href="#">
+                    <p>
+                        Voir toutes les destinations
+                    </p>
+                </a>
+            </div>
         </section>
     </main>
     <footer>

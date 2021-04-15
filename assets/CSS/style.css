@@ -49,16 +49,21 @@ nav {
     color: #e4e4e4;
     border: solid #000000 1px;
     padding: 20px 0px;
-    background-color: #4a4f53;
-    background-image: linear-gradient(#ffffff00, #333333);
+    background-color: #46535e;
+    /* background-color: #4a4f53; */
+    background-image: linear-gradient(#ffffff00, #30363a);
+    /* background-image: linear-gradient(#ffffff00, #333333); */
     font-weight: bold;
     text-decoration: none;
     transition: .2s;
 }
 .button:hover {
     background-color: #d8d8d8;
-    color: #333333;
+    color: #242b30;
     background-image: none;
+}
+#reducedSearch {
+    display: none;
 }
 #searchForm {
     display: flex;
@@ -76,8 +81,8 @@ nav {
 #searchButton {
     border: none;
     color: #e4e4e4;
-    background-color: #4a4f53;
-    background-image: linear-gradient(#ffffff00, #333333);
+    background-color: #46535e;
+    background-image: linear-gradient(#ffffff00, #30363a);
     padding: 5px 0px;
     font-weight: bold;
     cursor: pointer;
@@ -130,6 +135,8 @@ h2 {
     height: 30vw;
     min-height: 430px;
     margin: 20px 10px;
+    border-radius: 5px;
+    overflow: hidden;
     transform: scale(1);
     transition: .5s;
 }
@@ -174,6 +181,26 @@ h2 {
     margin: 40% 2em 10% 2em;
     text-indent: 2em;
     text-align: justify;
+}
+#allTravelsDiv {
+    margin: 3.5em 0;
+}
+#allTravels {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 15em;
+    background-color: #2c2c2ce3;
+    text-decoration: none;
+    color: #d4f0fc;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 0 2em;
+    transition: .5s;
+}
+#allTravels:hover {
+    background-color: #2c2c2c;
 }
 /* liste images */
 #blockPic-1 {
@@ -224,24 +251,22 @@ footer a {
         font-size: 300%;
     }
     nav {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
     }
     .button {
         padding: 10px 0px;
-        width: auto;
+        width: 100%;
+    }
+    #reducedSearch {
+        display: flex;
+        flex: 1;
+    }
+    .reducedButton {
+        width: 40%;
     }
     #searchForm {
-        flex-direction: row;
-        width: auto;
-        height: 30px;
-    }
-    #searchField {
-        width: 80%;
-        border: none;
-        border-right: #36322b 1px solid;
-    }
-    #searchButton {
-        width: 20%;
+        display: none;
     }
     #introTxt {
         margin: 2em 0;
@@ -267,6 +292,11 @@ footer a {
     .blockTxts {
         font-size: 0.9em;
         margin: 40% 1em 10% 1em;
+    }
+    #allTravels {
+        width: 85%;
+        padding: 0 5%;
+        text-align: center;
     }
 }
 @media (hover: none) {
