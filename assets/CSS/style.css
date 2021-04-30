@@ -97,6 +97,16 @@ input[type=search] {
     padding: 10px;
     font-size: 15px;
 }
+/*draggable div*/
+#draggable {
+    position: absolute;
+    z-index: 2;
+    background-color: tomato;
+    width: 100px;
+    height: 100px;
+    cursor: grab;
+
+}
 /*intro*/
 #introTxt {
     font-weight: bold;
